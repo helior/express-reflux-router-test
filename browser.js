@@ -14,5 +14,5 @@ Router.run(routes, Router.HistoryLocation, function(Handler, state) {
    *     load action with the handlers parameters.
    */
 
-  React.render(React.createElement(Handler, null), document.body);
+  React.render(React.createElement(Handler, null), document.getElementById('app'));
 });

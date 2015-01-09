@@ -6,10 +6,13 @@ var Router = require('react-router');
 var routes = require('./routes.jsx');
 
 var app = express();
+app.set('view engine', 'ejs');
+app.use(express.static('static'));
+
 app.use(function(req, res) {
   Router.run(routes,req.url, function(Handler, state) {
-    res.send(React.renderToString(React.createElement(Handler, null)));
-    // TODO: render with the same html template we have in `/dist/index.html`
+    var output = React.renderToString(React.createElement(Handler, null));
+    res.render('index', {content: output});
   });
 });
 

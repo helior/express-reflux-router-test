@@ -2,7 +2,7 @@ module.exports = {
   entry: './browser.js',
   output: {
     path: __dirname,
-    filename: 'dist/bundle.js'
+    filename: 'static/bundle.js'
   },
   module: {
     loaders: [
