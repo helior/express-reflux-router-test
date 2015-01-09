@@ -9,9 +9,8 @@ var app = express();
 app.use(function(req, res) {
   Router.run(routes,req.url, function(Handler, state) {
     res.send(React.renderToString(React.createElement(Handler, null)));
+    // TODO: render with the same html template we have in `/dist/index.html`
   });
 });
 
 app.listen(3000);
-
-// TODO: Introduce Reflux

@@ -6,6 +6,7 @@ module.exports = {
   },
   module: {
     loaders: [
+      // { test: /\.json$/, loader: 'json-loader' },
       { test: /\.jsx$/, loader: 'jsx-loader?harmony' }
     ]
   }

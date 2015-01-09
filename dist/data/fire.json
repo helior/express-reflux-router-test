@@ -1,0 +1,16 @@
+{
+  "burns": [
+    {
+      "type": "mild",
+      "reaction": "Dang it."
+    },
+    {
+      "type": "medium",
+      "reaction": "Ow!"
+    },
+    {
+      "type": "severe",
+      "reaction": "OMFG!!"
+    }
+  ]
+}
